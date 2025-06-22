@@ -7,7 +7,7 @@ blink: main.c
 	arm-none-eabi-objcopy -O binary output.elf output.bin
 
 flash: blink
-	sudo st-flash write output.bin 0x8000000
+	sudo st-flash write output.bin 0x20000000
 	sudo st-flash reset
 
 clean:
